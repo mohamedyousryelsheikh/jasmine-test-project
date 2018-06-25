@@ -9,5 +9,9 @@ In this project you are given a web-based application that reads RSS feeds. The 
 * checking there is atleast single entry when page is loaded
 * checking content changes on loading the rest of data
 
+# Steps to run
+* open index.html file located on the root of the project, on loading the page on the browser, jasmine will   run to check on the test cases that are developed.
+* to check the test cases done you can open jasmine/spec/feedreader.js file
+
 
 

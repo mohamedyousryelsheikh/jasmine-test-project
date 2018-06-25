@@ -113,18 +113,14 @@ $(function() {
 			beforeEach(function(done) {
 				loadFeed(0, function() {
 					firstFeed = $('.feed').html();
-					done();
-				});
-			});
-			beforeEach(function(done) {
-				loadFeed(1, function() {
-					secondFeed = $('.feed').html();
-					done();
+					loadFeed(0, done);
 				});
 			});
 			
+			
 			it('content of feed changes', function() {
-				expect(firstFeed).not.toBe(secondFeed);
+				var currentFeed = $('.feed').html()
+				expect(firstFeed).not.toBe(firstFeed); 
 			});
 		 
 		 });
