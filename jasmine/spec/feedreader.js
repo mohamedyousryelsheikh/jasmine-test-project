@@ -91,7 +91,7 @@ $(function() {
 			
 			it('content of feed changes', function() {
 				var currentFeed = $('.feed').html()
-				expect(firstFeed).not.toBe(firstFeed); 
+				expect(currentFeed).not.toBe(firstFeed); 
 			});
 		 
 		 });
